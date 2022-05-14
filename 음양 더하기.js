@@ -5,7 +5,7 @@ function solution(absolutes, signs) {
     for (let i = 0; i < absolutes.length; i++) {
         //i가 0인데 i가 absolutes의 길이보다 작으면 i값을 증가해서 for문 돌아간다. 
         if (signs[i] == true) {
-            // (부호 넣는 곳)sign에서 i가 양수면 true
+            // (부호 넣는 곳)signs에서 i가 양수면 true
             answer += absolutes[i];
             //answer = answer + absolutes[i];
         } else {
