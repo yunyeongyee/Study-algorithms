@@ -13,7 +13,7 @@ function solution(arr) {
     if (arr.length <= 1) return [-1];
     }
     else {
-        arr.splice(arr.indexOf(min), 1);
+        arr.splice(arr.indexOf(...min), 1);
         //arr배열에 가장 작은 수와 일치하는 첫번째 index를 리턴한다.
         //만약 없으면 -1로 리턴
         //splice로 arr배열의 기존 요소를 변경한다. 
