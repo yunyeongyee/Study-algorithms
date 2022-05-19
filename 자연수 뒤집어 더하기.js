@@ -15,13 +15,31 @@ n: 718253
 result: "3+5+2+8+1+7=26"
 __________________________________________________________________________________*/
 
+function solution(n) {
+            let sum = 0;
+            let rst = 0;
+            let result = 0;
+            let arr = String(n).split('').reverse().map(i => parseInt(i));
 
+            for (let i = 0; i < arr.length; i++) {
+                sum += arr[i];
+                if (i < arr.length - 1) {
+                    sum += "+";
+                }
+                rst += arr[i];
+            }
+            result = sum + "=" + rst
+            return result;
+        };
+        console.log(solution(718253))
+
+/*__________________________________________________________________________________
 function solution(n) {
     let sum = 0;
     let arr = String(n).split('').reverse().map(i => parseInt(i));
-  /* String()을 통해 숫자를 문자열로 변환시키고 split()메소드로 각각으로 나눠주고
+    String()을 통해 숫자를 문자열로 변환시키고 split()메소드로 각각으로 나눠주고
     reverse()메소드로 나누어진 배열들을 반대로 정렬하고 
-    map() 메소드와 parseInt()로 모든 요소들을 정수로 다시 변환한다. */
+    map() 메소드와 parseInt()로 모든 요소들을 정수로 다시 변환한다. 
 
 
     for (let i = 0; i< arr.length; i++){
@@ -31,3 +49,4 @@ function solution(n) {
     }return sum;
 }; 
 console.log(solution(718253)) //output: 26;
+____________________________________________________________________________________*/
