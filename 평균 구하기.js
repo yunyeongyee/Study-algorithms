@@ -12,8 +12,3 @@ function solution(arr) {
 }
 
 // .length: 문자열 길이 반환 
-
-function solution(arr) {
-    return arr.reduce((a, b) => a + b) / arr.length;
-}
-return answer;
